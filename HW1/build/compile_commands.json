@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/divyatyagi/Downloads/AERSP424/HW1/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -o CMakeFiles/HW1.dir/hw1.cpp.o -c /Users/divyatyagi/Downloads/AERSP424/HW1/hw1.cpp",
+  "file": "/Users/divyatyagi/Downloads/AERSP424/HW1/hw1.cpp",
+  "output": "CMakeFiles/HW1.dir/hw1.cpp.o"
+}
+]
