@@ -1,12 +1,8 @@
 #include <iostream>
+#include "functions.h"
 
 using namespace std;
 
-double gradient_cost(double y, double y_p)
-{
-    double dC = 2 * (y_p - y);
-    return dC;
-}
 
 int main()
 {

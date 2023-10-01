@@ -1,19 +1,7 @@
 #include <iostream>
-#include <cmath>
+#include "functions.h"
 
 using namespace std;
-
-double sigmoid(double z)
-{
-    double sigma = 1/(1+exp(-z));
-    return sigma;
-}
-
-double gradient_sigmoid(double sigma)
-{
-    double grad_sigma = sigma * (1-sigma);
-    return grad_sigma;
-}
 
 int main()
 {
