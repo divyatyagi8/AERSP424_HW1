@@ -179,7 +179,7 @@ int main()
 
         }
     cout<<AT504.name<<" final w: ["<<updated_w8[0]<<", "<<updated_w8[1]<<", "<<updated_w8[2]<<"]"<<endl; 
-    double fw[] = {updated_w8[0], updated_w8[1], updated_w8[2]};
+    double fw[] = {updated_w8[0], updated_w8[1], updated_w8[2]}; // final w
 
     // SF50 Vision
     AircraftModel SF50; // creates object

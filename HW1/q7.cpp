@@ -11,14 +11,14 @@ int main()
     double* testing = gradient_weights(alpha,y,w,x,sizeof(w)/sizeof(double),iteration);
     for (int i = 0; i < sizeof(w)/sizeof(double); i++)
     {
-        cout<<testing[i]<<endl;
+        cout<<testing[i]<<endl; // value of dw
     }
     double* updated_w = update_weights(testing,alpha,w,sizeof(w)/sizeof(double),iteration);
     for (int i = 0; i < sizeof(w)/sizeof(double); i++)
     {
-        cout<<updated_w[i]<<endl;
+        cout<<updated_w[i]<<endl; // updated w
     }
-    delete[] testing;
+    delete[] testing; // remove from memory
     delete[] updated_w;
 
     return 0;
