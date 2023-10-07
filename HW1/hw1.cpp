@@ -12,7 +12,7 @@ double p_dot; // derivative of roll rate
 int del_a; // aileron deflection angle
 double delta_t = 0.01; // time step [sec]
 double duration = 5; // [sec]
-double size = duration / delta_t + 1; // size of array
+double size = duration / delta_t + 1 ; // size of array
 double p[501];
 p[0] = 1; //initial roll rate
 
@@ -38,6 +38,5 @@ for (int i = 0; i < size; i++)
     cout<<"At t = "<<t<<" seconds, the roll rate is "<<p[i]<<endl;
 }
 
-return 0;
 }
 

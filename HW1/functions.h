@@ -32,3 +32,25 @@ double gradient_cost(double y, double y_p)
     double dC = 2 * (y_p - y);
     return dC;
 }
+
+double* gradient_weights(double alpha,double y, double w[], double x[],int size, int iteration)
+{
+    double* dw = new double[size];
+    for (int i = 0; i < size; i++)
+    {
+        dw[i] = (2*(sigmoid(dot_product(w,x,size))-y) * gradient_sigmoid(sigmoid(dot_product(w,x,size))))*x[i];
+    }
+    return dw;
+}
+
+double* update_weights(double *testing, double alpha, double w[], int size, int iteration)
+{
+    double* uw = new double[size];
+    uw[0]=w[0];
+    for (int i = 0; i < size; i++)
+    {
+        uw[i] = w[i] - alpha*testing[i];
+    }
+    return uw;
+}
+
